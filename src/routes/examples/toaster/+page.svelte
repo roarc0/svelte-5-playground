@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { getToastState } from "$lib/components/toast/toast-state.svelte";
+  import { getToastState } from "./toast/toast-state.svelte";
 
   const toastState = getToastState();
 

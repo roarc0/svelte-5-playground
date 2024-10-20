@@ -1,9 +1,10 @@
 <script lang="ts">
+  // import { Counter } from "./counter.svelte";
   import { createCounter } from "./counterfn.svelte";
 
   let { init: init = 0 } = $props();
 
-  const counter = createCounter(init);
+  const counter =  createCounter(init);
 </script>
 
 {#snippet counterButton(label: string, fn : () => void)}
@@ -20,5 +21,14 @@
 <h1
   class="max-w-fit text-lg m-1 py-2 px-4 rounded border border-gray-700 border-spacing-1"
 >
-  {counter.count}
+  Value: {counter.count}
+</h1>
+<h1
+  class="max-w-fit text-lg m-1 py-2 px-4 rounded border border-gray-700 border-spacing-1">
+  Is even: {counter.isEven ? "Yes" : "No"}
+</h1>
+<h1
+  class="max-w-fit text-lg m-1 py-2 px-4 rounded border border-gray-700 border-spacing-1"
+>
+  Doubled: {counter.doubled}
 </h1>

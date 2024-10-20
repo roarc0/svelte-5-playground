@@ -6,8 +6,8 @@
   import Header from "../lib/components/layout/Header.svelte";
   import Footer from "../lib/components/layout/Footer.svelte";
 
-  import Toaster from "$lib/components/toast/toaster.svelte";
-  import { setToastState } from "$lib/components/toast/toast-state.svelte";
+  import Toaster from "./examples/toaster/toast/toaster.svelte";
+  import { setToastState } from "./examples/toaster/toast/toast-state.svelte";
 
   let { children }: { children: Snippet } = $props();
 

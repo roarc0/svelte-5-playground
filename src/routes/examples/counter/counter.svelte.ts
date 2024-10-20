@@ -6,6 +6,10 @@ export class Counter {
     this.count = this.init = init;
   }
 
+  get value() {
+    return this.count;
+  }
+
   increment() {
     console.log("increment");
     this.count += 1;
