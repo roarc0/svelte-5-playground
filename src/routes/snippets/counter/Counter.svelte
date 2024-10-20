@@ -1,9 +1,9 @@
 <script lang="ts">
-  import {Counter} from "./counter.svelte";
+  import { createCounter } from "./counterfn.svelte";
 
-  let { initCount = 0 } = $props();
+  let { init: init = 0 } = $props();
 
-  const counter = new Counter(initCount);
+  const counter = createCounter(init);
 </script>
 
 {#snippet counterButton(label: string, fn : () => void)}

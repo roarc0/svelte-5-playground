@@ -3,8 +3,8 @@
 
   import "../app.css";
 
-  import Header from "./Header.svelte";
-  import Footer from "./Footer.svelte";
+  import Header from "../lib/components/layout/Header.svelte";
+  import Footer from "../lib/components/layout/Footer.svelte";
 
   import Toaster from "$lib/components/toast/toaster.svelte";
   import { setToastState } from "$lib/components/toast/toast-state.svelte";

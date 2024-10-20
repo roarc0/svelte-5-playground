@@ -5,10 +5,20 @@
 		"checkJs": true,
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"module": "es2020",
+		"lib": [
+			"es2020",
+			"dom"
+		],
+		// "target": "es2020",
+		"verbatimModuleSyntax": true,
+		"isolatedModules": true,
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true,
-		"moduleResolution": "bundler"
+		"moduleResolution": "node",
 	}
 }

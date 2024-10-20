@@ -12,5 +12,5 @@
 </section>
 
 <div class="w-1/2 mx-auto p-4">
-  <Counter initCount={1} />
+  <Counter init={1} />
 </div>

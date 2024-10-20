@@ -30,6 +30,17 @@
       </li>
       <li
         class="relative h-full"
+        aria-current={$page.url.pathname === "/snippets" ? "page" : undefined}
+      >
+        <a
+          href="/snippets"
+          class="flex items-center h-full px-2 text-xs font-bold uppercase tracking-wider text-gray-700 hover:text-theme-1 transition-colors"
+        >
+          Snippets
+        </a>
+      </li>
+      <li
+        class="relative h-full"
         aria-current={$page.url.pathname === "/about" ? "page" : undefined}
       >
         <a
