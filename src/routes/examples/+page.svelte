@@ -1,5 +1,6 @@
 <script>
   import { page } from "$app/stores";
+  import { examplesList } from "$lib/generated/examples";
 </script>
 
 <svelte:head>
@@ -13,22 +14,13 @@
   <p class="mb-4">This page shows some svelte 5 examples.</p>
 
   <ul class="list-disc pl-4 mb-4">
-    <li>
-      <a
-        href="{$page.url.pathname}/counter"
-        class="text-blue-500 hover:underline">Counter</a
-      >
-    </li>
-    <li>
-      <a
-        href="{$page.url.pathname}/toaster"
-        class="text-blue-500 hover:underline">Toaster</a
-      >
-    </li>
-    <li>
-      <a href="{$page.url.pathname}/runes" class="text-blue-500 hover:underline"
-        >Runes</a
-      >
-    </li>
+    {#each examplesList as example}
+      <li>
+        <a
+          href="{$page.url.pathname}/{example}"
+          class="text-blue-500 hover:underline">{example}</a
+        >
+      </li>
+    {/each}
   </ul>
 </div>
